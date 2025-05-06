@@ -23,9 +23,7 @@ Packaging – Pick and place robots used in the packaging process grab items fro
 Bin picking – Pick and place robots used in bin picking applications grab parts or items from bins. These pick and place robots typically have advanced vision systems allowing them to distinguish color, shape and size to pick the right items even from bins containing randomly mixed items. These parts or items are then sent to another location for assembly or packaging.
 Inspection – Pick and place robots used for inspection applications are equipped with advanced vision systems to pick up objects, detect anomalies and remove defective parts or items by placing them in a designated location.
 
-
-### PROCEDURE:
-	 
+### PROCEDURE:	 
 Select a robot New robots can be added from a local drive or from the online library:
 Select File Open online library (Ctrl+Shift+O). A new nested window will appear showing
 the online library It is also possible to select the corresponding button in the toolbar. Use
@@ -102,18 +100,13 @@ robot moving between the two targets Right click the target and select Teach Cur
 Position (Alt+double click) if a different position needs to be recorded for one of the
 targets Right click the target and select Target Options… (F3) to open the target options
 window shown in the next image	 
-	 
-	 
-
-
 ### PROGRAM 
  RoboDK Python Intermediate file to generate robot programs. Program name:
 MainProgram This file requires the post processor: Doosan to generate your robot
 program. This is a temporary file and you can delete it once you have generated your
 program.
 Post processor documentation: https://robodk.com/doc/en/PythonAPI/postprocessor.html
-
- import os
+import os
 sys.path.append(os.path.abspath(r"""C:/RoboDK/Posts/""")) # temporarily add
 path to POSTS folder
 from Doosan import *
@@ -158,6 +151,7 @@ r.MoveJ(p(0,0,200,90,-0.092,179.745),
 [25.4877,7.01322,117.517,-0.0324971,55.2,115.506],[0,0,0])
 r.MoveL(p(0,0,85,90,-0.092,179.745),
 [25.4877,15.1226,122.818,-0.0400439,41.7893,115.518],[0,0,0])
+
  
  ![Screenshot 2025-05-06 151304](https://github.com/user-attachments/assets/08b028fc-15b2-4e55-969e-e4ed704ffcb9)
 
